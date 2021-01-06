@@ -30,29 +30,36 @@
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
-        {{ post.authors }}. ({{ post.date | default: "1900-01-01" | date: "%Y" }}) <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>,
+        {{ post.authors }} ({{ post.date | default: "1900-01-01" | date: "%Y" }}) <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a>,
       {% endif %}
-      {% if post.status == "published"%}
-        <i>{{ post.venue }}</i> {{ post.volume }} ({{ post.number }}), {{ post.page }}.
+      {% if post.status == "published" %}
+        {% if post.venueType == "journal" %}
+          <i>{{ post.venue }}</i>
+          {% if post.volume and post.number and post.page %}
+            {{ post.volume }} ({{ post.number }}), {{ post.page }}.
+          {% elsif post.volume and post.number %}
+             {{ post.volume }} ({{ post.number }}).
+          {% elsif post.volume %}
+             {{ post.volume }}.
+          {% endif %}
+        {% elsif post.venueType == "conference"%}  
+          {% if post.award%}
+            In Proceedings of the <i>{{ post.venue }}</i>, {{post.award}}.
+          {% else%}
+            In Proceedings of the <i>{{ post.venue }}</i>.
+          {% endif %} 
+        {% endif %}  
       {% elsif post.status == "accepted"%}
-        accepted to present at <i>{{ post.venue }}</i>.
+        {% if post.venueType == "journal" %}
+          Accepted by <i>{{ post.venue }}</i>.
+        {% elsif post.venueType == "conference"%}  
+          Accepted to present at the <i>{{ post.venue }}</i>.
+        {% endif %} 
       {% elsif post.status == "submitted"%}
-        submitted.
-      {% elsif post.status == "conference"%}
-        In Proceedings of the <i>{{ post.venue }}</i>.
-      {% elsif post.status == "arxiv-preprint"%}
-        {{ post.paperurl }}.
-    {% endif %}
+        Submitted.
+      {% endif %}
     </p>
- <!--   {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
-    {% endif %}
-    {% if post.venue%}
-      <p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> 
-    {% elsif post.status == "submitted"%}
-      <p class="archive__item-excerpt" itemprop="description">{submitted}</p> 
-    {% endif %}
--->
+
     </li>
  </article>
 </div>
