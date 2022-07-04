@@ -25,4 +25,4 @@ redirect_from:
   
 ## Skills
 * Languages: C++, R, Python
-* Software: LaTeX, MATLAB.
+* Software: $\LaTeX$, MATLAB.
