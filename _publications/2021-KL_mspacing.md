@@ -5,9 +5,10 @@ collection: publications
 permalink: /publication/2021-KL_mspacing
 date: 2021-6-30
 venue: '2021 Winter Simulation Conference'
-paperurl: 
+paperurl: https://ieeexplore.ieee.org/abstract/document/9715376
 status: conference 
-citation: aaa
+citation: L. He and E. Song, "Nonparametric Kullback-Liebler Divergence Estimation Using M-Spacing," 2021 Winter Simulation Conference (WSC), 2021, pp. 1-12, doi: 10.1109/WSC52266.2021.9715376.
+
 ---
 
 ## Abstract
