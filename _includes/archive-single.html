@@ -47,7 +47,7 @@
         {% elsif post.collection == 'publications' and  post.status == 'submitted' %}
           <p>{{ post.authors }}, <i>submitted</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' and  post.status == 'conference' %}
-          <p>{{ post.authors }}, <i>In Proceedings of the</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p>{{ post.authors }}, <i>In Proceedings of the</i>, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' and  post.status == 'accepted' %}
           <p>{{ post.authors }},  accepted to present at <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.date %}
