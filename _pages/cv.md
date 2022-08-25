@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 ## Education  
-* Ph.D. in Industrial and Manufacturing Engineering, with Dual-title degree in Operations Research, Penn State University, 2023 (expected)  
+* Ph.D. in Operations Research, Georgia Institute of Technology, 2023 (expected)  
 * M.A. in Statistics, Columbia University, 2019
 * B.S. in Mathematics and Applied Mathematics, Fudan University, 2017
 
