@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Linyun He"
 title_separator          : "-"
 name                     : &name "Linyun He"
-description              : &description "Ph.D. candidate in IE&OR at Penn State University"
+description              : &description "Ph.D. student in OR at Georgia Tech"
 url                      : https://dongfengguzhu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "dongfengguzhu/dongfengguzhu.github.io"
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Linyun He"
   avatar           : "profile.png"
-  bio              : "Ph.D. candidate in IE&OR at Penn State University" #will be at the lefthand side bar
-  location         : "State College, PA"
+  bio              : "Ph.D. student in OR at Georgia Tech" #will be at the lefthand side bar
+  location         : "Atlanta, GA"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=UK0VCxsAAAAJ&hl=en"
-  email            : "ljh5602@psu.edu"
+  email            : "lhe85@gatech.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
