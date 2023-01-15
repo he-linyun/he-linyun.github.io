@@ -2,7 +2,7 @@ Created this note to keep the "files"  directory exist.
 
 Structure:
 _data: 
-  navigation.yml controls the words on the navigation panel
+  navigation.yml controls the label words on the navigation panel
   
 _includes:
 * archive-single.html controls the format of items (publications, teachings, etc.) in a <b>single page</b>, (i.e. the page of "Papers", "Teaching", 
