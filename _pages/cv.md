@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 ## Education  
-* Ph.D. in Operations Research, Georgia Institute of Technology, Since 2019
+* Ph.D. in Operations Research, Georgia Institute of Technology, 2024 (Expected)
 * M.A. in Statistics, Columbia University, 2019
 * B.S. in Mathematics and Applied Mathematics, Fudan University, 2017
 
