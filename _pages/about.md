@@ -14,4 +14,4 @@ redirect_from:
 
 ## Contact
 Email: lhe85 at gatech dot edu    
-Office: ISyE Main 327
+Office: ISyE Main 416
