@@ -6,7 +6,7 @@ permalink: /publication/2022-NPLearning-ReLU
 date: 2022-11-23
 venue: 'Transactions on Machine Learning Research'
 paperurl: 'https://arxiv.org/abs/2008.07648'
-status: arxiv-preprint
+status: published
 citation: 'Zhunxuan Wang, <b>Linyun He</b>, Chunchuan Lyu, Shay B Cohen. (2020). &quot;Learning Two-Layer Residual Networks with Nonparametric Function Estimation by Convex Programming&quot;, https://arxiv.org/abs/2008.07648.'
 ---
 
