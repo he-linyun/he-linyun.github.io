@@ -1,0 +1,16 @@
+---
+title: "Efficient Input Uncertainty Quantification for Regenerative Simulation"
+authors: '<b>Linyun He</b>, Mingbin Ben Feng, Eunhye Song'
+collection: publications
+permalink: /publication/2023-Nested_Sim_kNNLR
+date: 2023-12-30
+venue: '2023 Winter Simulation Conference'
+paperurl: 'https://ieeexplore.ieee.org/abstract/document/9715376'
+status: conference 
+citation: 'L. He and E. Song, &quot;Nonparametric Kullback-Liebler Divergence Estimation Using M-Spacing&quot;, In proceedings of the <i>2021 Winter Simulation Conference (WSC)</i>, 2021, pp. 1-12, doi: 10.1109/WSC52266.2021.9715376.'
+---
+
+
+
+## Abstract
+The initial bias in steady-state simulation can be characterized as the bias of a ratio estimator if the simulation model has a regenerative structure. This work tackles input uncertainty quantification for a regenerative simulation model when its input distributions are estimated from finite data. Our aim is to construct a bootstrap-based confidence interval (CI) for the true simulation output mean performance that provides a correct coverage with significantly less computational cost than the traditional methods. Exploiting the regenerative structure, we propose a $k$-nearest neighbor ($k$NN) ratio estimator for the steady-state performance measure at each set of bootstrapped input models and construct a bootstrap CI from the computed estimators. Asymptotically optimal choices for $k$ and bootstrap sample size are discussed. We further improve the CI by combining the $k$NN and likelihood ratio methods. We empirically compare the efficiency of the proposed estimators with the standard estimator using queueing examples.
