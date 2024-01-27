@@ -11,9 +11,9 @@ title                    : "Linyun He"
 title_separator          : "-"
 name                     : &name "Linyun He"
 description              : &description "Ph.D. student in OR at Georgia Tech"
-url                      : https://dongfengguzhu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://he-linyun.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "dongfengguzhu/dongfengguzhu.github.io"
+repository               : "he-linyun/he-linyun.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -103,7 +103,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : "linyun-he"
-  orcid            : #"http://orcid.org/yourorcidurl"
+  orcid            : https://orcid.org/0009-0009-3160-2323
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
