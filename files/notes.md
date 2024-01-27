@@ -1,4 +1,4 @@
-Created this note to keep the "files"  directory exist.
+Created this note to keep the "files" directory exist.
 
 Structure:
 _data: 
@@ -15,3 +15,6 @@ _layouts:
 * talk.html does the above for talks
 
 _pages: includes the markdown wrappers for each single page.
+
+Remind:
+Personal info on the main page is stored in "/_config.yml"
