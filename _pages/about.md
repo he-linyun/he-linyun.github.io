@@ -12,6 +12,11 @@ redirect_from:
 
 * My research interests lie across many topics: uncertainty quantification; simulation optimization and stochastic optimization; non-parametric methods and highdimensional statistics.
 
+## Education  
+* Ph.D. in Operations Research, Georgia Institute of Technology, 2024 (Expected)
+* M.A. in Statistics, Columbia University, 2019
+* B.S. in Mathematics and Applied Mathematics, Fudan University, 2017
+
 ## Contact
 Email: lhe85 at gatech dot edu    
 Office: ISyE Main 416
