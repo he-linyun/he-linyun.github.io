@@ -17,4 +17,4 @@ _layouts:
 _pages: includes the markdown wrappers for each single page.
 
 Remind:
-Personal info on the main page is stored in "/_config.yml"
+Personal info on the main page is stored in "/_config.yml" and "/_pages/about.md"
