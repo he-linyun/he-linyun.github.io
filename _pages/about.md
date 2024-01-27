@@ -17,7 +17,7 @@ redirect_from:
 * M.A. in Statistics, Columbia University, 2019
 * B.S. in Mathematics and Applied Mathematics, Fudan University, 2017
 
-## Research Papers
+## Publications
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
