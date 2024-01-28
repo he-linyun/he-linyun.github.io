@@ -48,7 +48,11 @@
       {% elsif post.status == "submitted"%}
         Submitted.
       {% elsif post.status == "conference"%}
-        In Proceedings of the <i>{{ post.venue }}</i>.
+        {% if post.award%}
+          In Proceedings of the <i>{{ post.venue }}</i>, {{post.award}}.
+        {% else%}
+          In Proceedings of the <i>{{ post.venue }}</i>.
+        {% endif %}        
       {% elsif post.status == "arxiv-preprint"%}
         {{ post.paperurl }}.
     {% endif %}
