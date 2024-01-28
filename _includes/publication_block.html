@@ -27,11 +27,7 @@
       </div>
     {% endif %}
     <p class="archive__item-title" itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-        {{ post.authors }}. ({{ post.date | default: "1900-01-01" | date: "%Y" }}) <a href="{{ post.paperurl }}">{{ title },}</a>
-      {% endif %}
+      {{ post.authors }}. ({{ post.date | default: "1900-01-01" | date: "%Y" }}) <a href="{{ post.paperurl }}">{{ title },}</a>
       {% if post.status == "published"%}
         <i>{{ post.venue }}</i> {{ post.volume }} ({{ post.number }}), {{ post.page }}.
       {% elsif post.status == "accepted"%}
@@ -44,15 +40,7 @@
         {{ post.paperurl }}.
     {% endif %}
     </p>
- <!--   {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
-    {% endif %}
-    {% if post.venue%}
-      <p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> 
-    {% elsif post.status == "submitted"%}
-      <p class="archive__item-excerpt" itemprop="description">{submitted}</p> 
-    {% endif %}
--->
+
     </li>
  </article>
 </div>
