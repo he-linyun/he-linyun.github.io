@@ -30,10 +30,12 @@
       {{ post.authors }}. ({{ post.date | default: "1900-01-01" | date: "%Y" }}) <a href="{{ post.paperurl }}">{{ title },}</a>
       {% if post.status == "published"%}
         <i>{{ post.venue }}</i> {{ post.volume }} ({{ post.number }}), {{ post.page }}.
-      {% elsif post.status == "accepted"%}
-        accepted to present at <i>{{ post.venue }}</i>.
+      {% elsif post.status == "accepted-conference"%}
+        Accepted to present at <i>{{ post.venue }}</i>.
+      {% elsif post.status == "accepted-journal"%}
+        Accepted to <i>{{ post.venue }}</i>.
       {% elsif post.status == "submitted"%}
-        submitted.
+        Submitted.
       {% elsif post.status == "conference"%}
         In Proceedings of the <i>{{ post.venue }}</i>.
       {% elsif post.status == "arxiv-preprint"%}
