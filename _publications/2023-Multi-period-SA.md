@@ -6,7 +6,7 @@ permalink: /publication/2023-Multi-period-SA
 date: 2023-08-29
 venue: ACM Transactions on Modeling and Computer Simulation
 paperurl: https://dl.acm.org/doi/10.1145/3617595
-status: published
+status: accepted
 citation: aaa
 ---
 
