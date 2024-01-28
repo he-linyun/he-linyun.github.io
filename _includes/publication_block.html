@@ -34,18 +34,17 @@
       {% endif %}
       {% if post.status == "published"%}
         <i>{{ post.venue }}</i>
-        {% if post.volume%}
-          {{ post.volume }}
-        {% endif %}
-        {% if post.number%}
-            ({{ post.number }})
+        {% if post.volume and post.number and post.page%}
+          {{ post.volume }} ({{ post.number }}), {{ post.page }}.
+        {% elsif post.number%}
+            ({{ post.number }}).
         {% endif %}
         {% if post.page%}
             , {{ post.page }}
         {% endif %}
-        .
+
       {% elsif post.status == "accepted-conference"%}
-        Accepted to present at <i>{{ post.venue }}</i>.
+        Accepted to present at the <i>{{ post.venue }}</i>.
       {% elsif post.status == "accepted-journal"%}
         Accepted to <i>{{ post.venue }}</i>.
       {% elsif post.status == "submitted"%}
