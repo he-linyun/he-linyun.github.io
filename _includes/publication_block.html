@@ -27,7 +27,11 @@
       </div>
     {% endif %}
     <p class="archive__item-title" itemprop="headline">
-      {{ post.authors }}. ({{ post.date | default: "1900-01-01" | date: "%Y" }}) <a href="{{ post.paperurl }}">{{ title },}</a>
+      {% if post.link %}
+        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      {% else %}
+        {{ post.authors }}. ({{ post.date | default: "1900-01-01" | date: "%Y" }}) <a href="{{ post.paperurl }}">{{ title }}</a>,
+      {% endif %}
       {% if post.status == "published"%}
         <i>{{ post.venue }}</i> {{ post.volume }} ({{ post.number }}), {{ post.page }}.
       {% elsif post.status == "accepted-conference"%}
