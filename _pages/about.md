@@ -19,9 +19,13 @@ redirect_from:
 
 ## Publications
   <ul>{% for post in site.publications reversed %}
-    {% include publication_block.html %}
+    {% include publication_single_list.html %}
   {% endfor %}</ul>
   
 ## Contact
 Email: lhe85 at gatech dot edu    
 Office: ISyE Main 416
+
+<!---
+aaa
+--->
