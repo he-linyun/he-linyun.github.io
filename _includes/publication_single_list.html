@@ -32,30 +32,32 @@
       {% else %}
         {{ post.authors }} ({{ post.date | default: "1900-01-01" | date: "%Y" }}) <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a>,
       {% endif %}
-      {% if post.status == "published"%}
-        <i>{{ post.venue }}</i>
-        {% if post.volume and post.number and post.page%}
-          {{ post.volume }} ({{ post.number }}), {{ post.page }}.
-        {% elsif post.volume and post.number%}
-           {{ post.volume }} ({{ post.number }}).
-        {% elsif post.volume%}
-           {{ post.volume }}.
-        {% endif %}
-      {% elsif post.status == "accepted-conference"%}
-        Accepted to present at the <i>{{ post.venue }}</i>.
-      {% elsif post.status == "accepted-journal"%}
-        Accepted to <i>{{ post.venue }}</i>.
+      {% if post.status == "published" %}
+        {% if post.venueType == "journal" %}
+          <i>{{ post.venue }}</i>
+          {% if post.volume and post.number and post.page %}
+            {{ post.volume }} ({{ post.number }}), {{ post.page }}.
+          {% elsif post.volume and post.number %}
+             {{ post.volume }} ({{ post.number }}).
+          {% elsif post.volume %}
+             {{ post.volume }}.
+          {% endif %}
+        {% elsif post.venueType == "conference"%}  
+          {% if post.award%}
+            In Proceedings of the <i>{{ post.venue }}</i>, {{post.award}}.
+          {% else%}
+            In Proceedings of the <i>{{ post.venue }}</i>.
+          {% endif %} 
+        {% endif %}  
+      {% elsif post.status == "accepted"%}
+        {% if post.venueType == "journal" %}
+          Accepted by <i>{{ post.venue }}</i>.
+        {% elsif post.venueType == "conference"%}  
+          Accepted to present at the <i>{{ post.venue }}</i>.
+        {% endif %} 
       {% elsif post.status == "submitted"%}
         Submitted.
-      {% elsif post.status == "conference"%}
-        {% if post.award%}
-          In Proceedings of the <i>{{ post.venue }}</i>, {{post.award}}.
-        {% else%}
-          In Proceedings of the <i>{{ post.venue }}</i>.
-        {% endif %}        
-      {% elsif post.status == "arxiv-preprint"%}
-        {{ post.paperurl }}.
-    {% endif %}
+      {% endif %}
     </p>
 
     </li>
