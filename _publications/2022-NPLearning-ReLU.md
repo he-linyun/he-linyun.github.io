@@ -5,6 +5,7 @@ collection: publications
 permalink: /publication/2022-NPLearning-ReLU
 date: 2022-11-23
 venue: 'Transactions on Machine Learning Research'
+venueType: journal
 volume: 2022
 paperurl: https://openreview.net/pdf?id=YiOI0vqJ0n
 status: published
