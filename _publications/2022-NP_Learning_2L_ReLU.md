@@ -2,14 +2,14 @@
 title: "Nonparametric Learning of Two-Layer ReLU Residual Units"
 authors: 'Zhunxuan Wang, <b>Linyun He</b>, Chunchuan Lyu, Shay B Cohen'
 collection: publications
-permalink: /publication/2022-NPLearning-ReLU
+permalink: /publication/2022-NP_Learning_2L_ReLU
 date: 2022-11-23
 venue: 'Transactions on Machine Learning Research'
 venueType: journal
 volume: 2022
 paperurl: https://openreview.net/pdf?id=YiOI0vqJ0n
 status: published
-citation: 'Zhunxuan Wang, <b>Linyun He</b>, Chunchuan Lyu, Shay B Cohen. (2020). &quot;Learning Two-Layer Residual Networks with Nonparametric Function Estimation by Convex Programming&quot;, https://arxiv.org/abs/2008.07648.'
+citation: 'Zhunxuan Wang, <b>Linyun He</b>, Chunchuan Lyu, Shay B Cohen. (2020). &quot;Learning Two-Layer Residual Networks with Nonparametric Function Estimation by Convex Programming&quot;
 ---
 
 ## Abstract
