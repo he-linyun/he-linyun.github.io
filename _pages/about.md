@@ -21,7 +21,10 @@ redirect_from:
   <ul>{% for post in site.publications reversed %}
     {% include publication_single_list.html %}
   {% endfor %}</ul>
-  
+
+## Paper under review
+* <b>Linyun He</b>, Mingbin Ben Feng, Eunhye Song (2024) Efficient input uncertainty quantification for ratio estimator, Submitted.
+
 ## Contact
 Email: lhe85 at gatech dot edu    
 Office: ISyE Main 416
