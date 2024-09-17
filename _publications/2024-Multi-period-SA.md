@@ -3,7 +3,7 @@ title: "Stochastic Approximation for Multi-period Simulation Optimization with S
 authors: '<b>Linyun He</b>, Uday V. Shanbhag, Eunhye Song'
 collection: publications
 permalink: /publication/2023-Multi-period-SA
-date: 2024-04
+date: 2024-04-30
 venue: ACM Transactions on Modeling and Computer Simulation
 venueType: journal
 volume: 34
