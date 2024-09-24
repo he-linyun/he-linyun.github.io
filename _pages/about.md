@@ -8,9 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-* I am a Ph.D. candidate in Operations Research at [Georgia Institute of Technology](https://www.isye.gatech.edu/), advised by [Dr. Eunhye Song](https://sites.google.com/view/eunhyesongphd/home). Previously, I received my bachelor's degree in Mathematics and Applied Mathematics from Fudan University and master's degree in Statistics from Columbia University.
+I am a Ph.D. candidate in Operations Research at [Georgia Institute of Technology](https://www.isye.gatech.edu/), advised by [Dr. Eunhye Song](https://sites.google.com/view/eunhyesongphd/home). Previously, I received my bachelor's degree in Mathematics and Applied Mathematics from Fudan University and master's degree in Statistics from Columbia University.
 
-* My research interests lie across many topics: uncertainty quantification; simulation optimization and stochastic optimization; non-parametric methods and highdimensional statistics.
+My research interests lie across many topics: uncertainty quantification; simulation optimization and stochastic optimization; non-parametric methods and highdimensional statistics.
+
+I am on the 2024-2025 academic job market!
 
 ## Education  
 * Ph.D. in Operations Research, Georgia Institute of Technology, 2025 (Expected)
