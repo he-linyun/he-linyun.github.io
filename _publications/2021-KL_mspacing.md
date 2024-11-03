@@ -1,5 +1,5 @@
 ---
-title: "Nonparametric Kullback-Liebler Divergence Estimation using m-Spacing"
+title: "Nonparametric Kullback-Liebler Divergence Estimation Using M-Spacing"
 authors: '<b>Linyun He</b>, Eunhye Song'
 collection: publications
 permalink: /publication/2021-KL_mspacing
