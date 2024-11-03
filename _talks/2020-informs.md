@@ -1,11 +1,11 @@
 ---
 title: "Stochastic Approximation For Simulation Optimization With Streaming Input Data"
 collection: talks
-type: "Talk"
+type: "conference"
 permalink: /talks/2020-informs
-venue: "INFORMS Annual Meeting"
+venue: "2020 INFORMS Annual Meeting"
 date: 2020-11-13
-location: "National Harbor, MD"
+location: "online"
 ---
 
 Session: FD03 - Stochastic Optimization (ID 348)

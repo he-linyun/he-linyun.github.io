@@ -1,12 +1,12 @@
 ---
 title: "Efficient Input Uncertainty Quantification for Regenerative Simulation"
-authors: '<b>Linyun He</b>, Mingbin Ben Feng, Eunhye Song'
+authors: '<b>Linyun He</b>, Eunhye Song, Mingbin Ben Feng'
 collection: publications
 permalink: /publication/2023-Nested_Sim_kNNLR
 date: 2023-12-30
 venue: '2023 Winter Simulation Conference'
 venueType: conference
-award: '<b>Best Contributed Theoretical Paper - Finalist</b>'
+award: '<b>Best Theoretical Contributed Paper - Finalist</b> (5/209)'
 paperurl: 'https://ieeexplore.ieee.org/document/10408364'
 status: published 
 citation: 

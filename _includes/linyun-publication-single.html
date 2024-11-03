@@ -1,0 +1,60 @@
+{% include base_path %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if include.type == "grid" and teaser %}
+      <div class="archive__item-teaser">
+        <img src=
+          {% if teaser contains "://" %}
+            "{{ teaser }}"
+          {% else %}
+            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+          {% endif %}
+          alt="">
+      </div>
+    {% endif %}
+    
+    {% if post.status == "published" %}
+      {{ post.authors }} ({{ post.date | default: "1900-01-01" | date: "%Y" }}) <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a>.
+
+      {% if post.venueType == "journal" %}
+        <i>{{ post.venue }}</i>.
+        <!-- print volume, number page info -->
+        {% if post.volume and post.number and post.page %}
+          {{ post.volume }} ({{ post.number }}), {{ post.page }}.
+        {% elsif post.volume and post.number %}
+          {{ post.volume }} ({{ post.number }}).
+        {% elsif post.volume %}
+          {{ post.volume }}.
+        {% elsif post.page %}
+          {{ post.page }}.
+        {% endif %}
+      {% elsif post.venueType == "conference"%}  
+        {% if post.award%}
+          In <i>Proceedings of the</i> <i>{{ post.venue }}</i>, {{post.award}}.
+        {% else%}
+          In <i>Proceedings of the</i> <i>{{ post.venue }}</i>.
+        {% endif %}
+      {% endif %}
+    {% elsif post.status == "accepted"%}
+      {{ post.authors }} ({{ post.date | default: "1900-01-01" | date: "%Y" }}) {{ post.title }}.
+      {% if post.venueType == "journal" %}
+        Accepted for publication, <i>{{ post.venue }}</i>.
+      {% elsif post.venueType == "conference"%}  
+        Accepted to present at the <i>{{ post.venue }}</i>.
+      {% endif %}
+    {% endif %}
+ </article>
+</div>
