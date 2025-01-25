@@ -34,7 +34,7 @@
         Submitted to <i>{{ post.venue }}</i>.
       {% endif %}
     {% elsif post.status == "revision" %}
-      {{ post.revision }} at <i>{{ post.venue }}</i>.
+      Under {{ post.revision }} at <i>{{ post.venue }}</i>.
     {% elsif post.status == "preparing" %}
       In Preparation.
     {% endif %}

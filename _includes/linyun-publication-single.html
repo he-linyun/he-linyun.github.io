@@ -42,10 +42,24 @@
           {{ post.page }}.
         {% endif %}
       {% elsif post.venueType == "conference"%}  
-        {% if post.award%}
-          In <i>Proceedings of the</i> <i>{{ post.venue }}</i>, {{post.award}}.
-        {% else%}
+        {% if post.volume or post.number or post.page %}
+          In <i>Proceedings of the</i> <i>{{ post.venue }}</i>,
+          <!-- print volume, number page info -->
+          {% if post.volume and post.number and post.page %}
+            {{ post.volume }} ({{ post.number }}), {{ post.page }}.
+          {% elsif post.volume and post.number %}
+            {{ post.volume }} ({{ post.number }}).
+          {% elsif post.volume %}
+            {{ post.volume }}.
+          {% elsif post.page %}
+            {{ post.page }}.
+          {% endif %}
+        {% else %}
           In <i>Proceedings of the</i> <i>{{ post.venue }}</i>.
+        {% endif %}    
+            
+        {% if post.award %}
+          {{post.award}}.
         {% endif %}
       {% endif %}
     {% elsif post.status == "accepted"%}
