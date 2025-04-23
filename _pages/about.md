@@ -13,7 +13,7 @@ My research interests lie across many topics.
 * Methodologies: robust simulation analysis, simulation optimization under model risk, non-parametric methods and high-dimensional statistics.  
 * Applications: smart manufacturing and digital twins.
 
-<b>I am on the 2024-2025 academic job market!</b>
+<!-- <b>I am on the 2024-2025 academic job market!</b> -->
 
 
 ## Contact
