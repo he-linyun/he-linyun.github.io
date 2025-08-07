@@ -2,8 +2,9 @@
 _site/
 .sass-cache/
 
-# Ignore the directory for local files during development
+# Ignore the directory for local files
 local/
+.DS_Store
 
 # Ignore the Gemfile that is generated
 Gemfile.lock
