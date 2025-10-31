@@ -7,15 +7,14 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. candidate in Operations Research at [Georgia Institute of Technology](https://www.isye.gatech.edu/), advised by [Dr. Eunhye Song](https://sites.google.com/view/eunhyesongphd/home). Previously, I received my bachelor's degree in Mathematics and Applied Mathematics from Fudan University and master's degree in Statistics from Columbia University.
+I am a postdoctoral researcher at [HEC Montreal](https://www.hec.ca/en/), working with [Dr. Carolina Osorio](https://www.carolinaosorio.net) and [Dr. Fausto Errico](https://www.gerad.ca/en/people/3417).
+I received my Ph.D. in Operations Research from the [School of Industrial and Systems Engineering](https://www.isye.gatech.edu/) at Georgia Tech, where I was advised by [Dr. Eunhye Song](https://sites.google.com/view/eunhyesongphd/home).
+
 
 My research interests lie across many topics.  
-* Methodologies: robust simulation analysis, simulation optimization under model risk, non-parametric methods and high-dimensional statistics.  
+* Methodologies: simulation-based combinatorial optimization, sequential decision making, uncertainty quantification, simulation optimization and experiment design under model risk, nonparametric and high-dimensional statistics.  
 * Applications: smart manufacturing and digital twins.
-
-<!-- <b>I am on the 2024-2025 academic job market!</b> -->
 
 
 ## Contact
-Email: lhe85 at gatech dot edu  
-Office: ISyE Main 416
+Email: linyun.he at hec dot ca

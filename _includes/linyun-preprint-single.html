@@ -30,8 +30,10 @@
     {% if post.status == "arxiv" %}      
       <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">{{ post.paperurl }}</a>. Submitted.
     {% elsif post.status == "submitted" %}
-      {% if post.venueType == "journal" %}
+      {% if post.venueType == "journal" and post.venue != "" and post.venue != nil %}
         Submitted to <i>{{ post.venue }}</i>.
+      {% else %}
+        Submitted.
       {% endif %}
     {% elsif post.status == "revision" %}
       Under {{ post.revision }} at <i>{{ post.venue }}</i>.
