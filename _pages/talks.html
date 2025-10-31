@@ -9,8 +9,16 @@ author_profile: true
 <p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
 {% endif %}
 
+<ol>
+{% for post in site.talks reversed %}
+  <li>{% include linyun-talk-single.html %}</li>
+{% endfor %}
+</ol>
+
+<!--
 <ol reversed>
 {% for post in site.talks reversed %}
   <li>{% include linyun-talk-single.html %}</li>
 {% endfor %}
 </ol>
+-->

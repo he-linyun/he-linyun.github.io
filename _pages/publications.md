@@ -14,7 +14,7 @@ Below is a list of my articles.
 You can also find them on my <a href="{{site.author.googlescholar}}">Google Scholar</a> profile.
 
 <h2 class="archive__item-title" itemprop="headline"> Publications</h2>
-<ol reversed>
+<ol>
   {% for post in site.publications reversed %}
     {% if post.status == "published" or post.status == "accepted" %}
       <li> {% include linyun-publication-single.html %} </li>
@@ -23,7 +23,7 @@ You can also find them on my <a href="{{site.author.googlescholar}}">Google Scho
 </ol>
 
 <h2 class="archive__item-title" itemprop="headline"> Preprints and Working Papers </h2>
-<ol reversed>
+<ol>
   {% for post in site.publications reversed %}
     {% if post.status == "arxiv" or post.status == "submitted" or post.status == "revision" or post.status == "preparing" %}
       <li> {% include linyun-preprint-single.html %} </li>

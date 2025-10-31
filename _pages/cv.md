@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
-last update: Nov. 1, 2024
+last update: October, 2025
 
 If file does not load, please try <a href="{{ site.baseurl }}/files/CV-Linyun_He.pdf">here</a>.
 

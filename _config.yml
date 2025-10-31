@@ -11,7 +11,7 @@ site_theme               : "default"
 title                    : "Linyun He"
 title_separator          : "-"
 name                     : &name "Linyun He"
-description              : &description "Ph.D. candidate in OR at Georgia Tech"
+description              : &description "Postdoctoral Research Fellow"
 url                      : https://he-linyun.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "he-linyun/he-linyun.github.io"
@@ -23,16 +23,16 @@ author:
   # Biographic information
   name             : "Linyun He (何林沄)"
   avatar           : "linyun.jpg"
-  bio              : "Ph.D. candidate in Operations Research"
-  location         : "Atlanta, GA"
-  employer         : "Georgia Institute of Technology"
+  bio              : "Postdoctoral Research Fellow"
+  location         : "Montreal, QC, Canada"
+  employer         : "HEC Montreal"
   uri              :
-  email            : "lhe85@gatech.edu"
+  email            : "linyun.he@hec.ca"
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?hl=en&user=UK0VCxsAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=UK0VCxsAAAAJ&view_op=list_works&sortby=pubdate"
   impactstory      : # URL
   orcid            : "https://orcid.org/0009-0009-3160-2323"
   semantic         : # URL
