@@ -38,21 +38,45 @@
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
-        {% if post.collection == 'teaching' %}
-          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.collection == 'publications' and  post.status == 'arxiv-preprint' %}
-          <p>{{ post.authors }}, <i>arXiv preprint</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.collection == 'publications' and  post.status == 'published' %}
-          <p>{{ post.authors }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.collection == 'publications' and  post.status == 'submitted' %}
-          <p>{{ post.authors }}, <i>submitted</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.collection == 'publications' and  post.status == 'conference' %}
-          <p>{{ post.authors }}, <i>In Proceedings of the</i> <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.collection == 'publications' and  post.status == 'accepted' %}
-          <p>{{ post.authors }},  accepted to present at <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.date %}
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+    {% if post.collection == 'teaching' %}
+      <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+
+    {% elsif post.collection == 'publications' %}
+      <p>
+        {{ post.authors }},
+        {% if post.venueType == 'journal' %}
+          {% if post.status == 'published' %}
+            <i>{{ post.venue }}</i>,
+          {% elsif post.status == 'accepted' %}
+            accepted for publication, <i>{{ post.venue }}</i>,
+          {% elsif post.status == 'submitted' %}
+            <i>submitted</i>,
+          {% endif %}
+        {% elsif post.venueType == 'conference' %}
+          {% if post.status == 'published' %}
+            In <i>Proceedings of the</i> <i>{{ post.venue }}</i>,
+          {% elsif post.status == 'accepted' %}
+            accepted to present at <i>{{ post.venue }}</i>,
+          {% elsif post.status == 'submitted' %}
+            <i>submitted</i>,
+          {% endif %}
+        {% elsif post.status == 'arxiv-preprint' %}
+          <i>arXiv preprint</i>,
+        {% elsif post.status == 'submitted' %}
+          <i>submitted</i>, {{ post.paperurl }}
         {% endif %}
+        {{ post.date | default: "1900-01-01" | date: "%Y" }}
+      </p>
+    {% elsif post.date %}
+      <p class="page__date">
+        <strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+        {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong>
+        <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">
+          {{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}
+        </time>
+      </p>
+
+    {% endif %}
     
     <!-- 
     {% if post.excerpt and site.read_more != 'enabled' %}
