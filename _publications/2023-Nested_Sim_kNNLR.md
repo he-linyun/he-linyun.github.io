@@ -3,17 +3,26 @@ title: "Efficient Input Uncertainty Quantification for Regenerative Simulation"
 authors: '<b>Linyun He</b>, Eunhye Song, Mingbin Ben Feng'
 collection: publications
 permalink: /publication/2023-Nested_Sim_kNNLR
-date: 2023-12-30
+date: 2023-12-13
 venue: '2023 Winter Simulation Conference'
 venueType: conference
 page: 385-396
 award: '<b>Best Theoretical Contributed Paper - Finalist</b> (5/209)'
 paperurl: 'https://ieeexplore.ieee.org/document/10408364'
-status: published 
-citation: 
+status: published
 ---
-
-
 
 ## Abstract
 The initial bias in steady-state simulation can be characterized as the bias of a ratio estimator if the simulation model has a regenerative structure. This work tackles input uncertainty quantification for a regenerative simulation model when its input distributions are estimated from finite data. Our aim is to construct a bootstrap-based confidence interval (CI) for the true simulation output mean performance that provides a correct coverage with significantly less computational cost than the traditional methods. Exploiting the regenerative structure, we propose a $k$-nearest neighbor ($k$NN) ratio estimator for the steady-state performance measure at each set of bootstrapped input models and construct a bootstrap CI from the computed estimators. Asymptotically optimal choices for $k$ and bootstrap sample size are discussed. We further improve the CI by combining the $k$NN and likelihood ratio methods. We empirically compare the efficiency of the proposed estimators with the standard estimator using queueing examples.
+
+## Citation
+```bibtex
+@inproceedings{he2023efficient,
+  title={Efficient input uncertainty quantification for regenerative simulation},
+  author={He, Linyun and Song, Eunhye and Feng, Ben},
+  booktitle={2023 Winter Simulation Conference (WSC)},
+  pages={385--396},
+  year={2023},
+  organization={IEEE}
+}
+```

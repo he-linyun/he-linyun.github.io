@@ -33,33 +33,33 @@ layout: default
         {% if page.modified %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
         {% endif %}
-        
+
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.status == 'arxiv-preprint' %}
-          <p> <a href="{{ page.paperurl }}"><i>arXiv preprint</i></a>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.status == 'submitted' %}
-          <p> Submitted, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.status == 'accepted' %}
-          <p> Accepted to present at <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.status == 'conference' %}
-          <p> In Proceedings of the <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.venue and page.date %}
-          <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.date %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
-        {% endif %}
-                     
-        {% if page.citation and page.paperurl and page.status == 'arxiv-preprint' %}
-          <p>Citation: {{ page.citation }} </p>
-        {% elsif page.status == 'submitted'%}
-          <p>To be updated.</p>
-        {% elsif page.status == 'accepted' %}
-          <p>To be updated.</p>
-        {% elsif page.citation and page.paperurl %}
-          <p>Citation: {{ page.citation }} <a href="{{ page.paperurl }}"><u>{{ page.paperurl }}</u></a></p>
-        {% elsif page.citation %}
-          <p>Citation: {{ page.citation }} </p>
+
+        {% elsif page.collection == 'publications' %}
+          <p>{{ page.authors }}</p>
+          <p>
+            {% if page.venueType == 'journal' %}
+              {% if page.status == 'published' %}
+                <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}
+              {% elsif page.status == 'accepted' %}
+                To appear in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}
+              {% elsif page.status == 'submitted' %}
+                Submitted.
+              {% elsif page.status == 'arxiv-preprint' %}
+                <a href="{{ page.paperurl }}"><i>arXiv preprint</i></a>, {{ page.date | default: "1900-01-01" | date: "%Y" }}
+              {% endif %}
+            {% elsif page.venueType == 'conference' %}
+              {% if page.status == 'published' %}
+                In <i>Proceedings of the</i> <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}
+              {% elsif page.status == 'accepted' %}
+                Accepted to present at <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}
+              {% elsif page.status == 'submitted' %}
+                Submitted.
+              {% endif %}
+            {% endif %}
+          </p>
         {% endif %}
     
         </header>
