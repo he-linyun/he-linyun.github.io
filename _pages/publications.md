@@ -7,6 +7,8 @@ author_profile: true
 
 {% include base_path %}
 
+<div style="text-align: justify;" markdown="1">
+
 The focus of my research is on creating and analyzing simulation-based decision-making algorithms and experiment designs, particularly under <i>model risks</i>.
 I explore both the theoretical foundations and practical applications of operations research and machine learning.
 
@@ -39,3 +41,5 @@ You can also find them on my <a href="{{site.author.googlescholar}}">Google Scho
     {% endif %}
   {% endfor %}
 </ol>
+
+</div>

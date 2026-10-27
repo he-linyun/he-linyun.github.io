@@ -27,11 +27,17 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
+    display: flex;
+    align-items: center;
     padding: 0.5em 1em;
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
+    }
+
+    @include breakpoint($large) {
+      display: block;
     }
 
     nav {
@@ -44,13 +50,40 @@
   }
 }
 
+.masthead__brand {
+  flex-shrink: 0;
+
+  @include breakpoint($large) {
+    @include span(2 of 12);
+  }
+
+  a {
+    display: inline-block;
+    padding: 0.5rem 0;
+    color: var(--global-masthead-link-color);
+  }
+}
+
 .masthead__menu {
+  flex: 1;
+  min-width: 0;
+
+  @include breakpoint($large) {
+    @include span(10 of 12 last);
+    @include prefix(0.75 of 12);
+  }
 
   ul {
     margin: 0;
     padding: 0;
     clear: both;
     list-style-type: none;
+  }
+}
+
+.masthead--single .masthead__menu {
+  @include breakpoint($large) {
+    @include suffix(2 of 12);
   }
 }
 

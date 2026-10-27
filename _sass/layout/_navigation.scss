@@ -174,7 +174,9 @@
 
 .greedy-nav {
   position: relative;
-  min-width: 250px;
+  min-width: 0;
+  min-height: 2.5rem;
+  padding-right: 3rem;
   background: var(--global-bg-color);
 
   a {
@@ -192,7 +194,7 @@
   button {
     position: absolute;
     height: 2.5rem;
-    right: 0;
+    right: 3rem;
     padding: 0 0.5rem;
     border: 0;
     outline: none;
@@ -210,9 +212,6 @@
       vertical-align: middle;
 
       &:first-child {
-        font-weight: bold;
-        text-wrap: wrap;
-
         a {
           margin-left: 0;
         }
@@ -226,6 +225,10 @@
     }
 
     #theme-toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+
       a {
         width: 25px;
         display: flex;
@@ -263,7 +266,7 @@
   .hidden-links {
     position: absolute;
     top: 100%;
-    right: 0;
+    right: 3rem;
     margin-top: 15px;
     padding: 5px;
     border: 1px solid var(--global-border-color);

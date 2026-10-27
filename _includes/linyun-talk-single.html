@@ -27,7 +27,7 @@
     {% endif %}
     
     <div style="display: flex; justify-content: space-between;">
-      <span>{{ post.venue }}</span>
+      <span>{{ post.venue }}{% if post.type == "invited" %} (Invited){% endif %}</span>
       <span>{{ post.location }}, {{ post.date | default: "1900-01-01" | date: "%Y-%m" }}</span>
     </div>
     Title: {{ post.title }}
