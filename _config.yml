@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-site_theme               : "default"
+site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Linyun He"
 title_separator          : "-"
 name                     : &name "Linyun He"
@@ -36,9 +36,12 @@ author:
   impactstory      : # URL
   orcid            : "https://orcid.org/0009-0009-3160-2323"
   semantic         : # URL
-  pubmed           : 
+  ssrn             : # URL
+  pubmed           : # URL
   researchgate     : # URL
   scopus           : # URL
+  zotero           : # URL
+
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
