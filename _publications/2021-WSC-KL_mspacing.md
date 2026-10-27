@@ -2,7 +2,9 @@
 title: "Nonparametric Kullback-Liebler Divergence Estimation Using M-Spacing"
 authors: '<b>Linyun He</b>, Eunhye Song'
 collection: publications
-permalink: /publication/2021-KL_mspacing
+permalink: /publication/2021-WSC-KL_mspacing
+redirect_from:
+  - /publication/2021-KL_mspacing
 date: 2021-12-15
 venue: '2021 Winter Simulation Conference'
 venueType: conference

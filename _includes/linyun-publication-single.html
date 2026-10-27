@@ -65,7 +65,7 @@
     {% elsif post.status == "accepted"%}
       {{ post.authors }} ({{ post.date | default: "1900-01-01" | date: "%Y" }}) {{ post.title }}.
       {% if post.venueType == "journal" %}
-        Accepted for publication, <i>{{ post.venue }}</i>.
+        <i>{{ post.venue }}</i>. Forthcoming.
       {% elsif post.venueType == "conference"%}  
         Accepted to present at the <i>{{ post.venue }}</i>.
       {% endif %}

@@ -2,7 +2,9 @@
 title: "Efficient Input Uncertainty Quantification for Ratio Estimator"
 authors: '<b>Linyun He</b>, Mingbin Ben Feng, Eunhye Song'
 collection: publications
-permalink: /publication/2026-IUQ_ratio
+permalink: /publication/2026-IJOC-IUQ_ratio
+redirect_from:
+  - /publication/2026-IUQ_ratio
 date: 2026-03-25
 venue: 'INFORMS Journal on Computing'
 venueType: journal

@@ -2,7 +2,9 @@
 title: "Digital Twin Validation with Multi-Epoch, Multi-Variate Output Data"
 authors: '<b>Linyun He</b>, Luke Rhodes-Leader, Eunhye Song'
 collection: publications
-permalink: /publication/2024-Multi_dim_DT_validation
+permalink: /publication/2024-WSC-multi_dim_DT_validation
+redirect_from:
+  - /publication/2024-Multi_dim_DT_validation
 date: 2024-12-15
 venue: '2024 Winter Simulation Conference'
 venueType: conference

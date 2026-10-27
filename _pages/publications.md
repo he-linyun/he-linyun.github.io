@@ -16,8 +16,17 @@ You can also find them on my <a href="{{site.author.googlescholar}}">Google Scho
 <h2 class="archive__item-title" itemprop="headline"> Publications</h2>
 <ol>
   {% for post in site.publications reversed %}
-    {% if post.status == "published" or post.status == "accepted" %}
-      <li> {% include linyun-publication-single.html %} </li>
+    {% if post.venueType == "journal" %}
+      {% if post.status == "published" or post.status == "accepted" %}
+        <li> {% include linyun-publication-single.html %} </li>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  {% for post in site.publications reversed %}
+    {% if post.venueType == "conference" %}
+      {% if post.status == "published" or post.status == "accepted" %}
+        <li> {% include linyun-publication-single.html %} </li>
+      {% endif %}
     {% endif %}
   {% endfor %}
 </ol>

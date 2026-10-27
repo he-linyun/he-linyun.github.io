@@ -2,7 +2,9 @@
 title: "Stochastic Approximation for Multi-period Simulation Optimization with Streaming Input Data"
 authors: '<b>Linyun He</b>, Uday V. Shanbhag, Eunhye Song'
 collection: publications
-permalink: /publication/2024-Multi_period_SA
+permalink: /publication/2024-TOMACS-Multi_period_SA
+redirect_from:
+  - /publication/2024-Multi_period_SA
 date: 2024-04-08
 venue: ACM Transactions on Modeling and Computer Simulation
 venueType: journal

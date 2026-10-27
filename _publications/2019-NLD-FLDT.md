@@ -2,7 +2,9 @@
 title: "High-Order Rogue Waves and Their Dynamics of the Fokas–Lenells Equation Revisited: a Variable Separation Technique"
 authors: 'Zihao Wang, <b>Linyun He</b>, Zhenyun Qin, Roger Grimshaw, Gui Mu'
 collection: publications
-permalink: /publication/2019-FLDT
+permalink: /publication/2019-NLD-FLDT
+redirect_from:
+  - /publication/2019-FLDT
 date: 2019-11-07
 venue: 'Nonlinear Dynamics'
 venueType: journal

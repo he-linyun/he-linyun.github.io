@@ -2,7 +2,9 @@
 title: "Introductory Tutorial: Simulation Optimization under Input Uncertainty"
 authors: '<b>Linyun He</b>, Eunhye Song'
 collection: publications
-permalink: /publication/2024-Tutorial_SO_under_IU
+permalink: /publication/2024-WSC-Tutorial_SO_under_IU
+redirect_from:
+  - /publication/2024-Tutorial_SO_under_IU
 date: 2024-12-15
 venue: '2024 Winter Simulation Conference'
 venueType: conference

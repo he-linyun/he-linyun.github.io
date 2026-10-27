@@ -44,7 +44,7 @@ layout: default
               {% if page.status == 'published' %}
                 <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}
               {% elsif page.status == 'accepted' %}
-                To appear in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}
+                <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}. Forthcoming.
               {% elsif page.status == 'submitted' %}
                 Submitted.
               {% elsif page.status == 'arxiv-preprint' %}
