@@ -20,4 +20,12 @@ My research interests lie across many topics.
 </div>
 
 ## Contact
-Email: linyun.he at hec dot ca
+
+<div style="display: grid; grid-template-columns: max-content auto; column-gap: 1em;">
+  <span>Email:</span>
+  <a href="mailto:linyun.he@hec.ca">linyun.he@hec.ca</a>
+  <span>Alternative:</span>
+  <a href="mailto:he.linyun.contact@gmail.com">he.linyun.contact@gmail.com</a>
+</div>
+
+Please contact me at my institutional address and cc my alternate email to help avoid delivery issues.
